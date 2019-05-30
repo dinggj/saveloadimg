@@ -6,7 +6,7 @@ if __name__ == "__main__":
     tarball = sys.argv[1]
     print(tarball)
 
-    workdir = '/tmp/xfleet-images'
+    workdir = '/tmp/saved-docker-images'
     os.system('rm -rf %s'%workdir)
     os.system('mkdir -p %s'%workdir)
     os.system('tar -zxvf %s -C %s'%(tarball, workdir))
