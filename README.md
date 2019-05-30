@@ -2,7 +2,7 @@
 
 批量导入/导出主机上的docker images
 
-## 导出镜像
+## 导出镜像(到目录 /tmp/saved-docker-images/）
 
 ```python
 python dockersave.py
