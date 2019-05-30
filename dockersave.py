@@ -4,8 +4,8 @@ import os
 import subprocess
 
 if __name__ == "__main__":
-    os.system('rm -rf /tmp/xfleet')
-    os.system('mkdir -p /tmp/xfleet')
+    os.system('rm -rf /tmp/saved-docker-images')
+    os.system('mkdir -p /tmp/saved-docker-images')
     p = subprocess.Popen('docker images', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     for line in p.stdout.readlines():
 
@@ -30,7 +30,7 @@ if __name__ == "__main__":
         os.system(cmd)
 
         # 将tar包放在临时目录
-        os.system('mv %s /tmp/xfleet/'%tarball)
+        os.system('mv %s /tmp/saved-docker-images/'%tarball)
 
 
     retval = p.wait()
