@@ -33,7 +33,7 @@ if __name__ == "__main__":
         print(cmd)
         os.system(cmd)
 
-        os.system('mv %s.gz /tmp/saved-docker-images/'%tarball)
+        #os.system('mv %s.gz /tmp/saved-docker-images/'%tarball)
 
 
     retval = p.wait()
